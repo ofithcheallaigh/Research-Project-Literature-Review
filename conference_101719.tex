@@ -53,8 +53,8 @@ This paper is intended to serve a number of functions. First, it will be a revie
 
 A number of other topics will be discussed throughout this work as they are closely related to the topics of constrained devices. Some of these have already been introduced, such as the Internet of Things, and edge computing. While these topics will be discussed throughout, not a lot of time will be given over to exploring their origins, or going into a lot of details on the research being carried out in the respective areas. 
 
-\section{The World of Classification}
-In this section, we will aim to review the major ML/DL frameworks that which are best suited to be used in a constrained device.
+\section{Artificial Intelligence, Machine Learning, and Deep Leaning}
+In this section, we will aim to review the worlds of Artificial Intelligence (AI), machine Learning (ML) and Deep Learning (DL), and try to understand the similarities, and the differences when looking at ML and DL.
 
 \begin{comment}
 \subsection{Machine Learning Algorithms}
@@ -65,12 +65,27 @@ When working in in unsupervised learning, we are dealing with data that is unlab
 We will not discuss reinforcement learning here. 
 \end{comment}
 
-\subsubsection{Artificial Intelligence, Machine Learning, and Deep Leaning}
+% \subsubsection{Artificial Intelligence, Machine Learning, and Deep Leaning}
 Many people probably think they know what artificial intelligence is. As humans, we know, generally speaking, what intelligence is (we hope we have some of it), and artificial intelligence is a computerised version of human intelligence. But sometimes it is good to try and put a more formal definition around a topic, and this topic is no different. 
 
 John McCarthy was a a computer science professor at Stanford university, he was interested in human level intelligence since the late 1940s, and in 1955, he coined the term "artificial intelligence". Throughout his career, Prof. McCarthy made a number of contributions to the field of AI, and received numerous awards related to AI \cite{mccarthy1}. 
 
-Figure \ref{fig:ai-ml-dl} \cite{pythonDL} shows where AI, ML and DL sit in relation to each other, we can show this quite famous image :
+In his paper 2007 paper \textit{What Is Artificial Intelligence} \cite{whatisai_mccarthy} Prof. McCarthy offers a definition we can use here. He says artificial intelligence is the process of using science and engineering to make intelligent machines, with a focus on intelligent computer programs. He also points out that AI does not have to confine itself to methods that are observed in biological systems. This definition has been extended by, among others, Stuart Russell and Peter Norvig who, in their book Artificial Intelligence: A Modern Approach \textcolor{red}{(This reference needs cited correctly)} added areas of interest for artificial intelligence. These can be listed as:
+
+\begin{itemize}
+    \item \textbf{Human Approach}
+    \begin{itemize}
+        \item Systems that think like humans
+        \item Systems that act like humans
+    \end{itemize}
+    \item \textbf{Ideal Approach}
+    \begin{itemize}
+        \item Systems that think rationally
+        \item Systems that act rationally
+    \end{itemize}
+\end{itemize}
+
+In news reports and the like, a so-called civilian (i.e. a person who does not study AI in a formal sense) may use the terms artificial intelligence, machine learning and deep learning interchangeably. While there is some truth in this we can see, as illustrated in Figure \ref{fig:ai-ml-dl} \cite{pythonDL}, that Deep learning is a sub-field of Machine Learning, which in turn is a sub-field of Artificial Intelligence:
 
 \begin{figure}
     \centering
@@ -79,7 +94,11 @@ Figure \ref{fig:ai-ml-dl} \cite{pythonDL} shows where AI, ML and DL sit in relat
     \label{fig:ai-ml-dl}
 \end{figure}
 
+Machine Learning (ML) and Deep Learning (DL) can be used interchangeably, however, there are differences, and it is worthwhile taking some time to look at them. 
 
+As seen, ML is a branch of AI and computer science which has a particular focus on using data-sets and various algorithms to mimic the way humans learn, and over time, improve the accuracy of the returned results. 
+
+\section{Algorithms}
 \subsubsection{Supervised Learning}
 We will focus here in supervised learning, since labelled data will be used in the project. Specifically, we will focus on classification models, since we will be trying to classify if something is an obstacle or not.
 
