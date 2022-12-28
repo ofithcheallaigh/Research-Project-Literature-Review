@@ -114,6 +114,7 @@ We will focus here in supervised learning, since labelled data will be used in t
 Since we are aiming to classify if something is an obstacle or not, we are looking at two-class classification algorithms. Some of the algorithms we will investigate here are \cite{azure}:
 
 
+
 \begin{itemize}
     \item Support Vector Machines
     \item Averaged Perceptron
@@ -123,6 +124,14 @@ Since we are aiming to classify if something is an obstacle or not, we are looki
     \item Boosted Decision Tree
     \item Neural Network
 \end{itemize}
+
+\section{Literature Review}
+This section will comprise the literature review for this project, which has a focus on embedded machine learning. It is not difficult to see a future where embedded machine learning or deep learning plays a central role in a number of systems and industries. This literature review aims to provide an overview of the state of the art, as well as context on where embedded ML/DL could be headed.
+
+As we have seen in \cite{statista1}, the growth of connected devices is increasing, and as the computing power of these devices increases, the potential of using these devices for ML or DL applications grows. 
+
+We will start by looking at previous research on the topic of embedded machine learning. An important piece of work was done by Nicholas Lane et. al. in their work \textit{Squeezing Deep Learning into Mobile and Embedded Devices} \cite{Nicholas_Lane_2017}. This work points out that the move towards deep learning in embedded systems has been slow in part due to the large resources required to process the massive amount of layers of interconnected nodes, added the fact that carrying out a single classification from using sensor data can require calculations to be carried out over, potentially, thousands, if not millions, of parameters. It is obvious when these systems were designed, no thought was given to the models being run on a constrained device. This is not unusual - a system is designed, and then optimised. This optimisation took place, and \cite{Nicholas_Lane_2017} points to work does on an effective speech recognition system for Sparse LSTM on FPGA \cite{han_s_2017}, where the authors proposed a method that compresses the LSTM model by a factor of 20, allowing an increase in prediction speed and with negligible loss in accuracy. The authors also proposed a scheduler to allow for parallelism as well as scheduling data flow, and the final step was designing a hardware flow that works directly on the sparse LSTM model. As this last item suggests, this work in aimed at hardware improvements. Other work, such as \cite{Likamwa2016} also has a focus on hardware. In this case, the authors focus on a method to improve the efficiency of continuous mobile vision by designing an analogue computational image sensor. Once the sensor has captured an image, it then processes that image through a deep convolutional network. All this is done in the analogue domain. From here, the system will export digital vision features. The proposed method greatly reduces the workload applied to the analogue-to-digital converter and the subsequent digital electronics system, which allows for efficent continuous mobile vision applications. 
+
 
 
 % \section*{Acknowledgment}
