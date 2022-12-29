@@ -121,3 +121,23 @@
    year = {2016},
 }
 
+@inproceedings{Lane2016,
+   abstract = {Breakthroughs from the field of deep learning are radically changing how sensor data are interpreted to extract the high-level information needed by mobile apps. It is critical that the gains in inference accuracy that deep models afford become embedded in future generations of mobile apps. In this work, we present the design and implementation of DeepX, a software accelerator for deep learning execution. DeepX signif- icantly lowers the device resources (viz. memory, computation, energy) required by deep learning that currently act as a severe bottleneck to mobile adoption. The foundation of DeepX is a pair of resource control algorithms, designed for the inference stage of deep learning, that: (1) decompose monolithic deep model network architectures into unit- blocks of various types, that are then more efficiently executed by heterogeneous local device processors (e.g., GPUs, CPUs); and (2), perform principled resource scaling that adjusts the architecture of deep models to shape the overhead each unit-blocks introduces. Experiments show, DeepX can allow even large-scale deep learning models to execute efficently on modern mobile processors and significantly outperform existing solutions, such as cloud-based offloading.},
+   author = {Nicholas D. Lane and Sourav Bhattacharya and Petko Georgiev and Claudio Forlivesi and Lei Jiao and Lorena Qendro and Fahim Kawsar},
+   doi = {10.1109/IPSN.2016.7460664},
+   isbn = {9781509008025},
+   journal = {2016 15th ACM/IEEE International Conference on Information Processing in Sensor Networks, IPSN 2016 - Proceedings},
+   month = {4},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {DeepX: A Software Accelerator for Low-Power Deep Learning Inference on Mobile Devices},
+   year = {2016},
+}
+@article{Gong2014,
+   abstract = {Deep convolutional neural networks (CNN) has become the most promising method for object recognition, repeatedly demonstrating record breaking results for image classification and object detection in recent years. However, a very deep CNN generally involves many layers with millions of parameters, making the storage of the network model to be extremely large. This prohibits the usage of deep CNNs on resource limited hardware, especially cell phones or other embedded devices. In this paper, we tackle this model storage issue by investigating information theoretical vector quantization methods for compressing the parameters of CNNs. In particular, we have found in terms of compressing the most storage demanding dense connected layers, vector quantization methods have a clear gain over existing matrix factorization methods. Simply applying k-means clustering to the weights or conducting product quantization can lead to a very good balance between model size and recognition accuracy. For the 1000-category classification task in the ImageNet challenge, we are able to achieve 16-24 times compression of the network with only 1\% loss of classification accuracy using the state-of-the-art CNN.},
+   author = {Yunchao Gong and Liu Liu and Ming Yang and Lubomir Bourdev},
+   month = {12},
+   title = {Compressing Deep Convolutional Networks using Vector Quantization},
+   url = {http://arxiv.org/abs/1412.6115},
+   year = {2014},
+}
+
